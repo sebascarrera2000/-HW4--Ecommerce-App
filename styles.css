@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Open+Sans:wght@500;700;800&display=swap');
+
+* {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #eee;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.container .title {
+    font-size: 3.5rem;
+    color: #444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.container .products-container .product {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+
+.container .products-container .product:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.container .products-container .product .img {
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.img {
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+
+.container .products-container .product h3 {
+    font-size: 2rem;
+    color: #444;
+    padding: .5rem 0;
+}
+
+.container .products-container .product:hover h3 {
+    color: #27ae60;
+}
+
+.container .products-container .product .price {
+    font-size: 2rem;
+    color: #444;
+}
+
+.mostrar-btn {
+    flex: 1 1 16rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #27ae60;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.meli-btn {
+    flex: 1 1 16rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #27ae60;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.currSign:before {
+    content: '$';
+}
+
+.box-productos {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.box-productos div {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 10px;
+}
+
+.btnVolver {
+    flex: 1 1 16rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #122bc9ca;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}

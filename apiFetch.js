@@ -59,17 +59,23 @@ const getMeliProducts = async () => {
       h3.innerHTML = product.title;
       divProduct.append(h3);
 
+      let divQty = document.createElement("div");
+      divQty.classList.add("Qty");
+      divQty.innerHTML = Number(product.available_quantity);
+      divQty.classList.add("currQty");
+      divProduct.append(divQty);
+
       let divPrice = document.createElement("div");
       divPrice.classList.add("price");
       divPrice.innerHTML = Number(product.price).toLocaleString("es-CL");
       divPrice.classList.add("currSign");
       divProduct.append(divPrice);
 
-      /* TODO: agregar clase para cantidad*/
-      let divQty = document.createElement("div");
-      divQty.classList.add("price");
-      divQty.innerHTML = Number(product.available_quantity);
-      divProduct.append(divQty);
+      let divboton = document.createElement("div");
+      divboton.innerHTML = "Add to Cart";
+      divboton.classList.add("addtocart");
+      divProduct.append(divboton);
+  
     });
     console.log(respuesta.data.results, "respuestaMeli");
   } catch (error) {

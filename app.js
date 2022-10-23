@@ -61,6 +61,12 @@ const mostrarProductos = () => {
       divPrice.innerHTML = Number(data[i].price).toLocaleString("es-CL");
       divPrice.classList.add("currSign");
       divProduct.append(divPrice);
+      
+      let divboton = document.createElement("div");
+      divboton.innerHTML = "Add to Cart";
+      divboton.classList.add("addtocart");
+      divProduct.append(divboton);
+
     }
   });
 };

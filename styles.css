@@ -18,18 +18,45 @@ html {
 }
 
 body {
-    background: #eee;
+  
+  background-color: white;
 }
 
+nav {
+  height: 60px;
+  width: 100%;
+  background-color: #FFF159;
+  padding-top: 5px;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #FFF159;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+
 .container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 3rem 2rem;
 }
 
 .container .title {
     font-size: 3.5rem;
-    color: #444;
+    color: black;
     margin-bottom: 3rem;
     text-transform: uppercase;
     text-align: center;
@@ -39,16 +66,19 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
+    border-radius: 5rem;
 }
 
 .container .products-container .product {
     text-align: center;
     padding: 3rem 2rem;
     background: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    outline: .1rem solid #ccc;
+    box-shadow: 0 .5rem 1rem rgba(247, 251, 8, 0.1);
+    outline: .1rem solid black;
     outline-offset: -1.5rem;
     cursor: pointer;
+    border-radius: 5rem;
+    
 }
 
 .container .products-container .product:hover {
@@ -57,8 +87,8 @@ body {
 }
 
 .container .products-container .product .img {
-    height: 25rem;
-    width: 25rem;
+    height: 15rem;
+    width: 15rem;
     object-fit: cover;
     margin-bottom: 2rem;
 }
@@ -68,11 +98,12 @@ body {
     width: 25rem;
     object-fit: cover;
     margin-bottom: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 
 .container .products-container .product h3 {
-    font-size: 2rem;
+    font-size: 16px;
     color: #444;
     padding: .5rem 0;
 }
@@ -84,12 +115,38 @@ body {
 .container .products-container .product .price {
     font-size: 2rem;
     color: #444;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container .products-container .product .Qty{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.8rem;
+  color: #444;
+  border-radius: 5px;
+  font-style: italic;
+
+}
+
+.container .products-container .product .addtocart{
+  padding-left: 5px;
+  padding-left: 5px;
+  margin-top: 5px;
+  border: none;
+  background:  #a7ae276e;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #202020;
+
 }
 
 .mostrar-btn {
     flex: 1 1 16rem;
     padding: 1rem 2rem 1rem 2rem;
-    background: #27ae60;
+    background: orange;
     color: #fff;
     font-size: 1.6rem;
     border-radius: .5rem;
@@ -99,15 +156,20 @@ body {
 .meli-btn {
     flex: 1 1 16rem;
     padding: 1rem 2rem 1rem 2rem;
-    background: #27ae60;
-    color: #fff;
+    background: orange;
+    color: black;
     font-size: 1.6rem;
     border-radius: .5rem;
     cursor: pointer;
 }
 
 .currSign:before {
-    content: '$';
+    content: ' $ ';
+}
+
+.currQty:before {
+  content: ' Unidades Disponibles : ';
+
 }
 
 .box-productos {

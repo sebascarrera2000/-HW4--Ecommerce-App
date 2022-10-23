@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <title>Escalab Shop</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+
 </head>
 <body>
-<button class="meli-btn" id="meli-btn">Meli Search</button>
-<a href="index.html"><button class="btnVolver" >Volver</button></a>
+
+<nav>
+    <div class="nav">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="img/mercado-libre-logo.png"  height="30" alt="">
+          </div>
+        </div>
+        
+        <div class="nav-links">
+            <button class="meli-btn" id="meli-btn">Mostrar Productos</button>
+            <a href="index.html"><button class="btnVolver" >Volver</button></a>
+        </div>
+</div>
+</nav>
+
 <div class="container">
     <h3 class="title">Listado de productos</h3>
     <div class="products-container" id="products-container-meli">
@@ -15,5 +31,7 @@
 </div>
 <script src="apiFetch.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+
 </body>
 </html>

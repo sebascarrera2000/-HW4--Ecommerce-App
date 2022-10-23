@@ -114,3 +114,5 @@ document.querySelectorAll('.truck-button').forEach(button => {
 
     });
 });
+
+

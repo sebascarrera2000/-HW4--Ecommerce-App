@@ -1,7 +1,6 @@
 
-
 body {
-  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+  background-image: radial-gradient(circle at 50% -20.71%, #ffff99 0, #ffff7d 16.67%, #ffff5f 33.33%, #f2f23c 50%, #cfe503 66.67%, #abd800 83.33%, #85cd00 100%);
   background-size: 300% 300%;
   -webkit-animation: Background 25s ease infinite;
   -moz-animation: Background 25s ease infinite;
@@ -69,18 +68,18 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: #2B3044;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 4em;
   letter-spacing: -2px;
   text-align: center;
-  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  text-shadow: 1px 2px 1px #2B3044;
 }
 
 h1:after {
   display: block;
-  color: #fff;
+  color: #2B3044;
   letter-spacing: 1px;
   font-family: 'Poiret One', sans-serif;
   content: 'Escalab';
